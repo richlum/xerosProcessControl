@@ -1,0 +1,25 @@
+Located at: 0 to 4f60
+Max addr is 4194303 3fffff
+memory inited
+dispatcher inited
+context inited
+create inited
+Root has been called
+root pid  = 1
+consumer child pid = 2
+consumer pid = 2
+producer child pid = 3
+producer  pid = 3
+TEST1: tx pid 3 send before receiver ready: send blocks
+receive all child pid = 4
+recv copied 63 bytes from pid 3 to pid 2
+Recv found src in state 4
+removed 3, state 4, from 0
+TEST1: rx consumer recvd 63 bytes from pid 3
+
+TEST1: rx msg recd by 2 was:
+
+TEST1: MSG: send msg from pid 3, sender blocks until rcvr read
+TEST1: tx producer sent 63 bytes to consumer pid
+
+ß

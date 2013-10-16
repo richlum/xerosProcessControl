@@ -1,0 +1,22 @@
+TEST7: rx bad memory address 16
+TEST7: rx consumer recvd -3 bytes bad buffer address
+SYS_STOP on pid 3, total dead 2
+Entered:notify_waiters:  AT ../c/disp.c:24
+idleproc is running as pid 2
+
+Entered:idleproc:  AT ../c/user.c:257
+Waking up pid 1
+removing idleproc (2) from running, other process available
+ROOT starting send to sender test
+pid entry = 67 for index value 3
+pid entry = 68 for index value 4
+SYS_STOP on pid 1, total dead 2
+Entered:notify_waiters:  AT ../c/disp.c:24
+pid(68) will block if successful
+pid(67) will block if successful
+sender1 result = -4
+SYS_STOP on pid 67, total dead 2
+Entered:notify_waiters:  AT ../c/disp.c:24
+found pid 68 waiting on our dying pid 67
+sender2 result = -1
+SYS_STOP on pid 68, total dead 0

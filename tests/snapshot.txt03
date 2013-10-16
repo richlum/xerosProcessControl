@@ -1,0 +1,25 @@
+TEST1: tx producer sent 63 bytes to consumer pid
+
+TEST2: tx  send to waiting receiver
+send copied 49 bytes from pid 2 to pid 3 which has is expecting to recv from 2
+Send found dest in state 4
+removed 3, state 4, from 0
+TEST2: tx Consumer sent 49 bytes
+
+TEST2: rx producer received 49 bytes from consumer
+TEST2: msg Consumer 2 sending to waiting reciver
+TEST3: tx Sending 125 byte msg to 64 byte receiver
+send copied 64 bytes from pid 3 to pid 2 which has is expecting to recv from 3
+Send found dest in state 4
+removed 2, state 4, from 0
+ TEST3: tx  producer sent 64 bytes to consumer
+
+TEST3: consumer recvd 64 bytes from producer
+
+TEST3: MSG pid: 3,large message being sent to a smaller message
+TEST4: tx pid 2 send to waiting universal receiver
+send copied 33 bytes from pid 2 to pid 4 which has is expecting to recv from 2
+Send found dest in state 4
+removed 4, state 4, from 0
+TEST4: tx consumer sent 33 bytes to universal rcvr
+ß

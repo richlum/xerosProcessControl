@@ -1,0 +1,8 @@
+Name		Role
+Tim Hortons	Main Caffiene supplier
+McDonalds	Secondary Caffiene supplier
+Starbucks	Tertieray Caffiene supplier
+Google		Tertieray technical advisor
+Piazza		Secondary technical advisor
+Don Acton	Primary technical advisor
+

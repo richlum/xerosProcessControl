@@ -1,0 +1,25 @@
+msg(p->c): This is a send msg from pid
+recv copied 41 bytes from pid 2 to pid 3
+Recv found src in state 4
+removed 2, state 4, from 0
+3. producer received 41 bytes from consumer
+msg(c->p):6. Consumer 2 got your message
+
+7. Consumer sent 41 bytes
+
+send copied 31 bytes from pid 2 to pid 4 which has is expecting to recv from 2
+Send found dest in state 4
+removed 4, state 4, from 0
+9:consumer sent 31 bytes to rcvr
+recv(0) recvd 31 bytes
+message was sent by pid 2
+msg(c->r):8. Consumer 2 is done
+SYS_STOP on pid 2, total dead 1
+Recv found src in state 4
+removed 3, state 4, from 0
+recv(0) recvd 31 bytes
+message was sent by pid 3
+msg(p->r):4. Producer 3 is done
+5. producer sent 31 bytes to rcvr_pid
+SYS_STOP on pid 3, total dead 1
+ß

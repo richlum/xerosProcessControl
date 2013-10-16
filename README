@@ -1,0 +1,29 @@
+Richard Lum
+
+
+to run extended producer consumer
+	make clean; make; make beros;
+to run extended producer with debugging info
+	make clean; make debug; make beros
+to run tests
+	make clean; make a2tests; make beros
+
+producer consumer meets specifications.  It may not be  obvious from
+the extended producer/consumer output.  The debug mode and tests 
+will output details such as
+
+- when idle proc runs, a series of dots are output in debug mode 
+- starting and stopping of idleproc (when sleeping processes awaken)
+- processes going to sleep and awaking sleeper processes 
+- when process runs off the end, sysstop can be seen to be  invoked
+- when new processes are launched using prev indexes, new pids 
+	are mod procsize
+- receiveany reports the sender pid
+- sending to a sender and recving from recvr both report WOULDBLOCK errors
+- blocking and unblocking by sender and recvr can be seen 
+- message size mismatches are truncated to smaller size buffer
+- when a process dies, all waiters are notified and will error 
+	out with BADPID from their blocked state 
+
+
+

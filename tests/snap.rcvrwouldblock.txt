@@ -1,0 +1,24 @@
+WARNING: trying to add to queue an existing member: ignoring
+SYS_STOP on pid 68, total dead 0
+Entered:notify_waiters:  AT ../c/disp.c:24
+Waking up pid 1
+removing idleproc (2) from running, other process available
+ROOT starting recv to rcvr test
+pid entry = 131 for index value 3
+pid entry = 132 for index value 4
+pid 1 going to sleep for 20000 ms
+recvr1 pid(131) will block if successful
+recvr2 pid(132) will block if successful
+WARNING: trying to add to queue an existing member: ignoring
+rcvr2 result = -2
+WARNING: trying to add to queue an existing member: ignoring
+SYS_STOP on pid 132, total dead 0
+Entered:notify_waiters:  AT ../c/disp.c:24
+found pid 131 waiting on our dying pid 132
+rcvr1 result = -1
+SYS_STOP on pid 131, total dead 2
+Entered:notify_waiters:  AT ../c/disp.c:24
+Waking up pid 1
+removing idleproc (2) from running, other process available
+SYS_STOP on pid 1, total dead 3
+Entered:notify_waiters:  AT ../c/disp.c:24

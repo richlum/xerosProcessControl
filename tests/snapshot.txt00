@@ -1,0 +1,25 @@
+
+Bochs BIOS - build: 11/24/11
+$Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+Options: apmbios pcibios pnpbios eltorito rombios32
+
+
+Press F12 for boot menu.
+
+Booting from Floppy...
+
+Loading........
+
+
+CPSC 415, 2012W1
+A1 Solution Kernel
+32 Bit Xeros 1.1
+Located at: 0 to 4f60
+Max addr is 4194303 3fffff
+memory inited
+dispatcher inited
+context inited
+create inited
+Root has been called
+root pid  = 1
+
